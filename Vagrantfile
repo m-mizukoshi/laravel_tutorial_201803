@@ -44,7 +44,7 @@ Vagrant.configure("2") do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
-  config.vm.synced_folder ".", "/var/www/laravel", create: true, owner: 'apache', group: 'apache', mount_options: ['dmode=777', 'fmode=777']
+  config.vm.synced_folder ".", "/var/www/laravel_tutorial_4", create: true, owner: 'apache', group: 'apache', type: 'virtualbox', mount_options: ['dmode=777', 'fmode=777']
   config.vm.hostname = "laravel.localhost"
 
   # Provider-specific configuration so you can fine-tune various
